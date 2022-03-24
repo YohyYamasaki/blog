@@ -76,7 +76,6 @@ Thumbs.db
 .history
 .babelrc
 .contentful.json.sample
-bin
 _config.yml
 .travis.yml
 .prettierrc
