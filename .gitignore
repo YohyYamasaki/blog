@@ -78,8 +78,6 @@ Thumbs.db
 .contentful.json.sample
 bin
 _config.yml
-.npmrc
-.nvmrc
 .travis.yml
 .prettierrc
 app.json
