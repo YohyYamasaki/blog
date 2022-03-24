@@ -24,7 +24,7 @@
 
 .title {
   font-weight: var(--extrabold);
-  font-size: var(--text-title);
+  font-size: xx-large;
   line-height: 1.4em;
   margin: 5 0px;
   color: var(--dark);

@@ -5,6 +5,8 @@ import Layout from '../../layout'
 import Hero from '../../uiParts/hero/hero'
 import Tags from '../../uiParts/tags/tags'
 import MainContainer from '../../uiParts/main-container/main-container'
+import SubContainer from '../../uiParts/sub-container/sub-container'
+import Profile from '../../organisms/profile/profile'
 
 import * as styles from './blog-post.module.css'
 import NeighborPost from '../../organisms/neighbor-post/neighbor-post'
@@ -21,46 +23,53 @@ const BlogPostTemplate = ({ data, pageContext }) => {
   return (
     <Layout>
       <Seo title={post.title} />
-      <MainContainer>
-        <Hero image={post.heroImage?.gatsbyImageData} title={post.title} />
-        <div className={styles.article}>
-          <time dateTime={post.rawDate}>{post.publishDate.substr(0, 10)}</time>
-          <div className={styles.buttons}>
-            <div>
-              <Tags tags={post.tags} />
+      <div className={styles.layout}>
+        <MainContainer className={styles.mainContainer}>
+          <Hero image={post.heroImage?.gatsbyImageData} title={post.title} />
+          <div className={styles.article}>
+            <time dateTime={post.rawDate}>
+              {post.publishDate.substr(0, 10)}
+            </time>
+            <div className={styles.buttons}>
+              <div>
+                <Tags tags={post.tags} />
+              </div>
+              <div className="s9-widget-wrapper"></div>
             </div>
-            <div className="s9-widget-wrapper"></div>
-          </div>
 
-          <div
-            className={styles.body}
-            dangerouslySetInnerHTML={{
-              __html: post.body?.childMarkdownRemark?.html,
-            }}
-          />
-        </div>
-        <div className={styles.neighborPost}>
-          <div>
-            {nextTitle !== null && (
-              <NeighborPost
-                navText="⇠ 新しい記事へ"
-                url={nextUrl}
-                title={nextTitle}
-              />
-            )}
+            <div
+              className={styles.body}
+              dangerouslySetInnerHTML={{
+                __html: post.body?.childMarkdownRemark?.html,
+              }}
+            />
           </div>
+          <div className={styles.neighborPost}>
+            <div>
+              {nextTitle !== null && (
+                <NeighborPost
+                  navText="⇠ 新しい記事へ"
+                  url={nextUrl}
+                  title={nextTitle}
+                />
+              )}
+            </div>
 
-          <div>
-            {previousTitle !== null && (
-              <NeighborPost
-                navText="以前の記事へ ⇢"
-                url={previousUrl}
-                title={previousTitle}
-              />
-            )}
+            <div>
+              {previousTitle !== null && (
+                <NeighborPost
+                  navText="以前の記事へ ⇢"
+                  url={previousUrl}
+                  title={previousTitle}
+                />
+              )}
+            </div>
           </div>
-        </div>
-      </MainContainer>
+        </MainContainer>
+        <SubContainer className={styles.subContainer}>
+          <Profile />
+        </SubContainer>
+      </div>
     </Layout>
   )
 }

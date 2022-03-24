@@ -3,25 +3,25 @@
   font-size: var(--text-lg);
   font-style: italic;
   margin: 0 auto 1em;
-  max-width: var(--size-max-width);
   padding-bottom: var(--size-gutter);
   padding-left: var(--size-gutter);
   position: relative;
   top: -1em;
 }
 
-.article {
-  display: grid;
-  font-size: var(--text-prose);
-  gap: var(--space-xl);
-  letter-spacing: var(--text-prose-tracking);
-  line-height: var(--loose);
-  color: var(--dark);
+.layout {
+  display: flex;
+}
+
+.subContainer {
+  width: 100%;
 }
 
 .body {
   color: var(--dark);
-  letter-spacing: 0.03em;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  width: 100%;
 }
 
 .article h2:first-of-type {
@@ -61,7 +61,54 @@
   align-items: center;
 }
 
+.neighborPost {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article h1 {
+  color: #a53a31; /*文字色*/
+  /*線の種類（点線）2px 線色*/
+  border-bottom: dashed 1px #a53a31;
+  font-size: x-large;
+  min-width: 70.7%;
+  width: 70.7%;
+  margin-right: 0 10px;
+  padding-top: 40px;
+  font-family: var(--font-sans);
+  padding-bottom: 10px;
+}
+
+.article h2 {
+  font-size: 25px;
+  font-family: var(--font-sans);
+  padding-top: 20px;
+}
+
+.article h3 {
+  padding-top: 20px;
+
+  font-size: 20px;
+  font-family: var(--font-sans);
+}
+
 @media (max-width: 768px) {
+  .subContainer {
+    border-top: dotted 1px var(--border);
+    padding-top: 30px;
+    margin: 50px auto;
+    max-width: 80vw;
+  }
+  .layout {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .body {
+    margin: 0 auto;
+    max-width: 90vw;
+  }
 }
 
 @media (min-width: 768px) {
@@ -81,31 +128,4 @@
   .article ul {
     padding-left: 0;
   }
-}
-
-.neighborPost {
-  display: flex;
-  justify-content: space-between;
-}
-
-.article h1 {
-  color: #a53a31; /*文字色*/
-  /*線の種類（点線）2px 線色*/
-  border-bottom: dashed 2px #a53a31;
-  font-size: xx-large;
-  min-width: 70.7%;
-  width: 70.7%;
-  margin-right: 0 10px;
-  font-family: var(--font-sans);
-  padding-bottom: 10px;
-}
-
-.article h2 {
-  font-size: xx-large;
-  font-family: var(--font-sans);
-}
-
-.article h3 {
-  font-size: x-large;
-  font-family: var(--font-sans);
 }
