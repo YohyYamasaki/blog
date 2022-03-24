@@ -40,9 +40,9 @@ module.exports = {
     auther: 'yayoi',
     description:
       'ドイツ移住、海外同性婚、フロントエンド開発、ロンドン大学のことなど',
-    siteUrl: `https:/yayoi.com`,
+    siteUrl: `https://YohyYamasaki.github.io`,
   },
-  pathPrefix: '/',
+  pathPrefix: '/mypage/',
   plugins: [
     `gatsby-plugin-sitemap`,
     'gatsby-transformer-remark',

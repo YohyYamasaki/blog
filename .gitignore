@@ -84,6 +84,5 @@ _config.yml
 .prettierrc
 app.json
 postcss.config.js
-package-lock.json
 static.json
 yarn.lock
