@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fontawesome/react-fontawesome'
+import { faTwitter } from '@fontawesome/free-brands-svg-icons'
 
 import * as styles from './profile.module.css'
 import { StaticImage } from 'gatsby-plugin-image'
