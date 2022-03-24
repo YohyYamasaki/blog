@@ -83,3 +83,4 @@ app.json
 postcss.config.js
 static.json
 yarn.lock
+.npmrc
