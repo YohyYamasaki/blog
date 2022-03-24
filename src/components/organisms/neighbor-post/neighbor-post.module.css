@@ -1,0 +1,27 @@
+.container {
+  color: var(--light-dark);
+  transition: 0.2s, color 0.2s;
+  padding: 0 10px;
+  min-width: 25vw;
+  max-width: 250px;
+  text-align: center;
+  border-radius: var(--radius-md);
+  border: solid 1px var(--border);
+}
+
+.container:hover {
+  background: var(--bg-hover);
+  color: var(--text-hover) !important;
+}
+
+.navText {
+  font-style: oblique;
+  margin: 0;
+  font-weight: lighter;
+  font-size: smaller;
+}
+
+.title {
+  font-weight: bold;
+  margin: 0;
+}

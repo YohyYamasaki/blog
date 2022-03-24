@@ -1,0 +1,31 @@
+.category {
+  padding: 0;
+  position: relative;
+  margin: 0;
+}
+
+.items {
+  line-height: 1.2;
+  padding: 0.6em;
+  list-style-type: none !important;
+  transition: 0.2s, color 0.2s;
+  border-radius: var(--radius-sm);
+  margin: 10px 0;
+}
+
+.items:hover {
+  background: var(--bg-hover);
+  color: var(--text-hover);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-sans);
+  padding-left: 10px;
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}

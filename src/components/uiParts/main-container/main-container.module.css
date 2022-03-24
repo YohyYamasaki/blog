@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    margin: 0 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 59.7%;
+    max-width: 59.7%;
+    margin-left: 10%;
+    margin-right: 2%;
+  }
+}
+
+.container {
+  animation: fadeIn 0.3s ease 0s 1 normal;
+  -webkit-animation: fadeIn 0.3s ease 0s 1 normal;
+}
+
+@media only screen and (max-width: 620px) {
+  .container {
+    margin: 0 16px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

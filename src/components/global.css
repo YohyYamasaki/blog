@@ -26,7 +26,6 @@ html * {
 
 body {
   background: var(--background);
-  color: var(--text-color);
   font-family: var(--font-sans);
   font-size: 16px;
   font-weight: var(--body);
@@ -34,6 +33,7 @@ body {
   margin: 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  color: var(--dark);
 }
 
 img {
@@ -41,7 +41,7 @@ img {
   width: 100%;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -50,7 +50,7 @@ h6 {
   font-weight: var(--semibold);
   line-height: var(--dense);
 }
-
+ */
 a {
   color: currentColor;
   text-decoration: none;

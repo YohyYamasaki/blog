@@ -1,0 +1,166 @@
+:root {
+  --header-outer-height: 250px;
+  --header-inner-height: 65px;
+  --header-height-difference: calc(
+    var(--header-outer-height) - var(--header-inner-height)
+  );
+  --header-bg: #fff;
+}
+
+.title {
+  font-family: var(--font-title);
+  font-weight: 400;
+  text-align: center;
+  font-size: 30px;
+  color: var(--dark);
+}
+
+.description {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: medium;
+  text-align: center;
+  padding-bottom: 30px;
+  color: var(--dark);
+}
+
+.headerOuter {
+  width: 100%;
+  margin: 0 auto;
+  /* Make it stick */
+  height: var(--header-outer-height);
+  position: sticky;
+  top: calc(
+    var(--header-height-difference) * -1
+  ); /* Multiply by -1 to get a negative value */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  /* Other */
+  background-image: url('../../../img/header.png');
+  background-size: cover;
+  background-position: 0% 100%;
+  z-index: 99;
+  margin-bottom: 20px;
+}
+
+.headerInner {
+  width: 100%;
+  padding: 4px;
+  /* Make it stick */
+  height: 50px;
+  position: sticky;
+  background-color: rgb(255, 255, 255);
+  border-radius: var(--radius-x-lg) var(--radius-x-lg) 0 0;
+
+  /* Other */
+  z-index: 9;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  gap: var(--space-lg);
+}
+
+@media (max-width: 360px) {
+  .navigation {
+    flex-wrap: wrap;
+  }
+}
+
+.name {
+  font-family: var(--font-title);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  line-height: 1.4em;
+  color: var(--dark);
+  padding-top: 6px;
+  padding-left: 11vw;
+  margin: 0;
+}
+
+.navigationItem {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  color: var(--dark);
+}
+
+.navigationItem a {
+  font-size: large;
+  color: currentColor;
+  text-decoration: none;
+  background-image: -moz-linear-gradient(
+    top,
+    var(--yellow) 0%,
+    var(--yellow) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    top,
+    var(--yellow) 0%,
+    var(--yellow) 100%
+  );
+  background-image: linear-gradient(
+    to bottom,
+    var(--yellow) 0%,
+    var(--yellow) 100%
+  );
+  background-position: 0px 98%;
+  background-size: 0px 6px;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  transition: 0.2s ease;
+  padding-bottom: 3px;
+}
+
+.navigationItem a:hover {
+  border-bottom-color: var(--yellow);
+  background-size: 100% 6px;
+  padding-bottom: 3px;
+}
+
+.navigationItem .active {
+  background-image: linear-gradient(to right, var(--yellow), var(--yellow));
+  background-repeat: no-repeat;
+  background-size: 100% 6px;
+  font-weight: bolder;
+}
+
+.logoLink {
+  display: flex;
+  font-weight: var(--medium);
+  align-items: center;
+  flex-direction: row;
+  flex-shrink: 0;
+  gap: var(--space-md);
+}
+
+@media (max-width: 767px) {
+  .logoLink > span:last-child {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+
+.block {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}

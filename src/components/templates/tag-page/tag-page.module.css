@@ -1,0 +1,48 @@
+@media (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: var(--size-max-width);
+    margin: 0 auto;
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+.pagenation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.box {
+  max-width: 800px;
+}
+
+.tagName {
+  font-size: 3rem;
+  writing-mode: vertical-rl;
+}
+
+.number {
+  font-size: medium;
+  padding-left: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
