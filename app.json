@@ -1,12 +1,7 @@
 {
-  "name": "Contentful Gatsby Starter",
-  "description": "Gatsby starter for a Contentful project.",
-  "keywords": [
-    "contentful",
-    "gatsby",
-    "static",
-    "ssg"
-  ],
+  "name": "yayoi's blog",
+  "description": "ドイツ移住、海外同性婚、フロントエンド開発、ロンドン大学のことなど",
+  "keywords": ["contentful", "gatsby", "static", "ssg"],
   "repository": "https://github.com/contentful-userland/gatsby-contentful-starter",
   "success_url": "/",
   "buildpacks": [

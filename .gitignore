@@ -76,3 +76,14 @@ Thumbs.db
 .history
 .babelrc
 .contentful.json.sample
+bin
+_config.yml
+.npmrc
+.nvmrc
+.travis.yml
+.prettierrc
+app.json
+postcss.config.js
+package-lock.json
+static.json
+yarn.lock
