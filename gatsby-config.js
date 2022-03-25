@@ -54,6 +54,7 @@ module.exports = {
     //     display: 'swap',
     //   },
     // },
+    `gatsby-plugin-preact`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     'gatsby-transformer-sharp',
@@ -94,7 +95,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images-contentful`,
             options: {
-              maxWidth: 1400,
+              maxWidth: 1280,
               linkImagesToOriginal: false,
               zIndex: 4,
               background: '#9c9c9c',
