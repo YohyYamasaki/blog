@@ -90,7 +90,7 @@ module.exports = {
           `gatsby-remark-prismjs`,
           {
             resolve: `gatsby-remark-images-zoom`,
-            options: { margin: 30, scrollOffset: 100 },
+            options: { scrollOffset: 100 },
           },
           {
             resolve: `gatsby-remark-images-contentful`,
