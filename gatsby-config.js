@@ -44,9 +44,19 @@ module.exports = {
   },
   pathPrefix: '/mypage/',
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Zen Kaku Gothic New\:300,400,500,700`,
+          `Zen Maru Gothic\:300,400,500,70`,
+        ],
+        display: 'swap',
+      },
+    },
+    `gatsby-plugin-react-helmet-async`,
     `gatsby-plugin-sitemap`,
     'gatsby-transformer-sharp',
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -100,12 +110,6 @@ module.exports = {
       resolve: `gatsby-plugin-social9-socialshare`,
       options: {
         content: `5f3f681280e94275a5f596be7208a16f`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
       },
     },
     {
