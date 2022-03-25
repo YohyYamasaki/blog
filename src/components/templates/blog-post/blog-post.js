@@ -27,6 +27,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
             .replace(/(<([^>]+)>)/gi, '')
             .substr(0, 100) + '...'
         }
+        image={post.heroImage?.gatsbyImageData}
       />
       <div className={styles.layout}>
         <MainContainer className={styles.mainContainer}>

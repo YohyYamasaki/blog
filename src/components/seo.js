@@ -17,8 +17,11 @@ const Seo = ({ description = '', lang = 'jp', meta = [], title, image }) => {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription =
+    description !== '' ? description : site.siteMetadata.description
   const defaultTitle = title || site.siteMetadata?.title
+
+  console.log(metaDescription)
 
   return (
     <Helmet
@@ -64,14 +67,6 @@ const Seo = ({ description = '', lang = 'jp', meta = [], title, image }) => {
         {
           name: `twitter:title`,
           content: defaultTitle,
-        },
-        {
-          name: `twitter:text:title`,
-          content: defaultTitle,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
         },
       ].concat(meta)}
     />
