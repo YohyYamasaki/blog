@@ -44,16 +44,16 @@ module.exports = {
   },
   pathPrefix: '/mypage/',
   plugins: [
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `Zen Kaku Gothic New\:300,400,500,700`,
-          `Zen Maru Gothic\:300,400,500,70`,
-        ],
-        display: 'swap',
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       `Zen Kaku Gothic New\:300,400,500,700`,
+    //       `Zen Maru Gothic\:300,400,500,70`,
+    //     ],
+    //     display: 'swap',
+    //   },
+    // },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     'gatsby-transformer-sharp',
@@ -117,6 +117,23 @@ module.exports = {
       options: {
         trackingIds: [
           process.env.GOOGLE_ANALYTICS_ID, // Google Analytics / GA
+        ],
+      },
+    },
+    {
+      resolve: 'gatsby-omni-font-loader',
+      options: {
+        enableListener: true,
+        preconnect: ['https://fonts.gstatic.com'],
+        web: [
+          {
+            name: 'Zen Kaku Gothic New',
+            file: 'https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap',
+          },
+          {
+            name: 'Zen Maru Gothic',
+            file: 'https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap',
+          },
         ],
       },
     },
