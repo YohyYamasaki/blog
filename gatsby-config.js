@@ -44,16 +44,16 @@ module.exports = {
   },
   pathPrefix: '/mypage/',
   plugins: [
-    // {
-    //   resolve: `gatsby-plugin-google-fonts`,
-    //   options: {
-    //     fonts: [
-    //       `Zen Kaku Gothic New\:300,400,500,700`,
-    //       `Zen Maru Gothic\:300,400,500,70`,
-    //     ],
-    //     display: 'swap',
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Zen Kaku Gothic New\:300,400,500,700`,
+          `Zen Maru Gothic\:300,400,500,70`,
+        ],
+        display: 'swap',
+      },
+    },
     `gatsby-plugin-preact`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
