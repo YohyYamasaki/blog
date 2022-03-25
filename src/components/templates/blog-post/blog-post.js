@@ -18,11 +18,16 @@ const BlogPostTemplate = ({ data, pageContext }) => {
   const previousTitle = pageContext.previousTitle
   const nextTitle = pageContext.nextTitle
 
-  console.log(post.body?.childMarkdownRemark?.html)
-
   return (
     <Layout>
-      <Seo title={post.title} />
+      <Seo
+        title={post.title}
+        description={
+          post.body?.childMarkdownRemark?.html
+            .replace(/(<([^>]+)>)/gi, '')
+            .substr(0, 100) + '...'
+        }
+      />
       <div className={styles.layout}>
         <MainContainer className={styles.mainContainer}>
           <Hero image={post.heroImage?.gatsbyImageData} title={post.title} />

@@ -40,13 +40,23 @@ module.exports = {
     auther: 'yayoi',
     description:
       'ドイツ移住、海外同性婚、フロントエンド開発、ロンドン大学のことなど',
-    siteUrl: `https://YohyYamasaki.github.io`,
+    siteUrl: `https://yayo1.com/`,
   },
   pathPrefix: '/mypage/',
   plugins: [
     `gatsby-plugin-sitemap`,
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "yayoi's blog",
+        short_name: "yayoi's blog",
+        start_url: '/',
+        display: 'minimal-ui',
+        icon: 'src/img/favicon.png', // This path is relative to the root of the site.
+      },
+    },
     'gatsby-plugin-sharp',
     'gatsby-plugin-image',
     'gatsby-awesome-pagination',

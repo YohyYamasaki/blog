@@ -102,13 +102,17 @@
   }
   .layout {
     display: block;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 
   .body {
     margin: 0 auto;
-    max-width: 90vw;
+    max-width: 100%;
+  }
+
+  .article h1 {
+    width: 100%;
   }
 }
 

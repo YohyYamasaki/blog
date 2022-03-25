@@ -1,7 +1,9 @@
 @media (max-width: 768px) {
   .container {
-    margin: 0 auto;
-    margin: 0 10px;
+    border-top: dotted 1px var(--border);
+    padding-top: 30px;
+    margin: 50px auto;
+    max-width: 80vw;
   }
 }
 

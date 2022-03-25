@@ -117,3 +117,10 @@ code {
   min-width: 100%; /* 2 */
   font-size: small;
 }
+
+.language-text {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  font-size: small !important;
+}
