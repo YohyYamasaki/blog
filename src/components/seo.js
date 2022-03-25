@@ -18,7 +18,9 @@ const Seo = ({ description = '', lang = 'jp', meta = [], title, image }) => {
   )
 
   const metaDescription =
-    description !== '' ? description : site.siteMetadata.description
+    description !== ''
+      ? `${description} | ${site.siteMetadata.description}`
+      : site.siteMetadata.description
   const defaultTitle = title || site.siteMetadata?.title
 
   console.log(String(image))
@@ -40,11 +42,11 @@ const Seo = ({ description = '', lang = 'jp', meta = [], title, image }) => {
           content: image,
         },
         {
-          name: `og:title`,
+          name: `twitter:title`,
           content: defaultTitle,
         },
         {
-          name: `og:description`,
+          name: `twitter:description`,
           content: metaDescription,
         },
         {
@@ -52,7 +54,7 @@ const Seo = ({ description = '', lang = 'jp', meta = [], title, image }) => {
           content: `website`,
         },
         {
-          name: `og:image`,
+          name: `twitter:image`,
           content: image,
         },
         {
