@@ -40,19 +40,19 @@ const Seo = ({ description = '', lang = 'jp', meta = [], title, image }) => {
           content: image,
         },
         {
-          property: `og:title`,
+          name: `og:title`,
           content: defaultTitle,
         },
         {
-          property: `og:description`,
+          name: `og:description`,
           content: metaDescription,
         },
         {
-          property: `og:type`,
+          name: `og:type`,
           content: `website`,
         },
         {
-          property: `og:image`,
+          name: `og:image`,
           content: image,
         },
         {
