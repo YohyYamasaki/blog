@@ -54,7 +54,7 @@ module.exports = {
         display: 'swap',
       },
     },
-    `gatsby-plugin-react-helmet-async`,
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     'gatsby-transformer-sharp',
     {
