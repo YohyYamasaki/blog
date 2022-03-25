@@ -19,7 +19,7 @@ const Seo = ({ description = '', lang = 'jp', meta = [], title, image }) => {
 
   const metaDescription =
     description !== ''
-      ? `${description} | ${site.siteMetadata.description}`
+      ? `${description} | ${site.siteMetadata?.title}`
       : site.siteMetadata.description
   const defaultTitle = title || site.siteMetadata?.title
 
