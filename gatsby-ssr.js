@@ -1,7 +1,4 @@
-exports.onPreRenderHTML = function onPreRenderHTML({
-  getHeadComponents,
-  replaceHeadComponents,
-}) {
+const onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
   const headComponents = getHeadComponents()
   headComponents.sort((a, b) => {
     if (a.type === b.type || (a.type !== 'style' && b.type !== 'style')) {
@@ -19,3 +16,5 @@ exports.onPreRenderHTML = function onPreRenderHTML({
 
   replaceHeadComponents(headComponents)
 }
+
+export { onPreRenderHTML }
