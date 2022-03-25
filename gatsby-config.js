@@ -99,6 +99,7 @@ module.exports = {
               zIndex: 4,
               background: '#9c9c9c',
               withWebp: true,
+              loading: 'eager',
             },
           },
         ],
