@@ -124,3 +124,7 @@ code {
   padding: 0;
   font-size: small !important;
 }
+
+.medium-zoom-image--opened {
+  z-index: 99;
+}
