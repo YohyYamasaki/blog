@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 import * as styles from './profile.module.css'
 import { StaticImage } from 'gatsby-plugin-image'
@@ -12,10 +10,7 @@ const Profile = ({ data }) => {
       <h3 className={styles.title}>About</h3>
       <StaticImage src="../../../img/icon.jpg" className={styles.icon} />
       <Link to="https://twitter.com/__yayo1__" target="_blank">
-        <p className={styles.name}>
-          yayoi
-          <FontAwesomeIcon icon={faTwitter} className={styles.twitter} />
-        </p>
+        <p className={styles.name}>yayoi</p>
       </Link>
 
       <div className={styles.description}>
