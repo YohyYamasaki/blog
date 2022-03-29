@@ -16,6 +16,7 @@ const Index = ({ data, pageContext }) => {
 
   return (
     <Layout>
+      <Seo image="../../src/img/header.webp" />
       <div className={styles.container}>
         <MainContainer className={styles.main}>
           <h1 className={styles.categoryName}>すべての記事</h1>
