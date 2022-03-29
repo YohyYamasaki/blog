@@ -22,12 +22,11 @@
     "gatsby-plugin-material-ui": "^4.0.2",
     "gatsby-plugin-mdx": "^3.10.2",
     "gatsby-plugin-netlify": "^4.1.0",
-    "gatsby-plugin-react-helmet": "^5.0.0",
+    "gatsby-plugin-react-helmet": "^5.10.0",
     "gatsby-plugin-react-helmet-async": "^1.2.1",
     "gatsby-plugin-sharp": "^4.9.1",
     "gatsby-plugin-sitemap": "^5.10.2",
     "gatsby-plugin-social9-socialshare": "^1.0.6",
-    "gatsby-plugin-typography": "^4.10.0",
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-images-contentful": "^5.9.0",
     "gatsby-remark-images-zoom": "^1.1.0",
@@ -42,10 +41,7 @@
     "react-helmet": "^6.1.0",
     "react-helmet-async": "^1.2.3",
     "react-medium-image-zoom": "^4.3.5",
-    "react-typography": "^0.16.20",
-    "styled-component": "^2.8.0",
-    "typography": "^0.16.21",
-    "typography-theme-fairy-gates": "^0.16.19"
+    "styled-component": "^2.8.0"
   },
   "devDependencies": {
     "contentful-import": "^8.2.28",

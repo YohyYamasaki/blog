@@ -2,13 +2,11 @@ import React from 'react'
 
 import './uiParts/variables.css'
 import './global.css'
-import Seo from './seo'
 import Navigation from './uiParts/navigation/navigation'
 import Footer from './uiParts/footer/footer'
 const BlogLayout = (props) => {
   return (
     <>
-      <Seo />
       <Navigation />
       <main>{props.children}</main>
       <Footer />

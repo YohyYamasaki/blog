@@ -11,7 +11,7 @@ const Category = ({ data }) => {
       <h3 className={styles.title}>カテゴリー</h3>
       <ul className={styles.category}>
         {categoryList.map((cat) => (
-          <Link to={`/tags/${cat}`} className={styles.link}>
+          <Link to={`/tags/${cat}`}>
             <li className={styles.items}>
               <div>{cat}</div>
             </li>

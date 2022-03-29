@@ -6,7 +6,7 @@ import * as styles from './hero.module.css'
 const Hero = ({ image, title, content }) => (
   <div className={styles.hero}>
     <h1 className={styles.title}>
-      <span className={styles.title_span}>{title}</span>
+      <span>{title}</span>
     </h1>
 
     {image && (

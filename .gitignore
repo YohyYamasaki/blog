@@ -74,13 +74,7 @@ public
 Thumbs.db
 
 .history
-.babelrc
 .contentful.json.sample
 _config.yml
 .travis.yml
 .prettierrc
-app.json
-postcss.config.js
-static.json
-yarn.lock
-.npmrc

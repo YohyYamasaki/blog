@@ -15,25 +15,27 @@ const Index = ({ data, pageContext }) => {
   const posts = data.allContentfulBlogPost.nodes
 
   return (
-    <Layout>
+    <>
       <Seo />
-      <div className={styles.container}>
-        <MainContainer className={styles.main}>
-          <h1 className={styles.categoryName}>すべての記事</h1>
-          <div className={styles.articleSpace}>
-            <PostPreview posts={posts} />
-            <PagenationIndex pageContext={pageContext} />
-          </div>
-        </MainContainer>
-        <div className={styles.space}></div>
-        <SubContainer className={styles.category}>
-          <div className={styles.profile}>
-            <Profile />
-          </div>
-          <Category />
-        </SubContainer>
-      </div>
-    </Layout>
+      <Layout>
+        <div className={styles.container}>
+          <MainContainer>
+            <h1 className={styles.categoryName}>すべての記事</h1>
+            <div className={styles.articleSpace}>
+              <PostPreview posts={posts} />
+              <PagenationIndex pageContext={pageContext} />
+            </div>
+          </MainContainer>
+          <div className={styles.space}></div>
+          <SubContainer className={styles.category}>
+            <div className={styles.profile}>
+              <Profile />
+            </div>
+            <Category />
+          </SubContainer>
+        </div>
+      </Layout>
+    </>
   )
 }
 

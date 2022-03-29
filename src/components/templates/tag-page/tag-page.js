@@ -15,7 +15,7 @@ const TagPage = ({ data, pageContext }) => {
   return (
     <Layout>
       <div className={styles.container}>
-        <MainContainer className={styles.body}>
+        <MainContainer>
           <h1 className={styles.categoryName}>{tagName} </h1>
           <p className={styles.number}>{posts.length}件の記事があります</p>
           <div className={styles.articleSpace}>
