@@ -14,6 +14,7 @@
     "@types/react-helmet-async": "^1.0.3",
     "dotenv": "^16.0.0",
     "gatsby": "^4.10.3",
+    "gatsby-awesome-pagination": "^0.3.8",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-google-gtag": "^4.10.0",
     "gatsby-plugin-image": "^2.0.0",
