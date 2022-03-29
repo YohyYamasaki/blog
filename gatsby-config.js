@@ -55,7 +55,7 @@ module.exports = {
         display: 'swap',
       },
     },
-    `gatsby-plugin-preact`,
+
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     'gatsby-transformer-sharp',
