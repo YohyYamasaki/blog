@@ -44,6 +44,7 @@ module.exports = {
   },
   pathPrefix: '/mypage/',
   plugins: [
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
