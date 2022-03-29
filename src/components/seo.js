@@ -22,6 +22,11 @@ const Seo = ({ description = '', lang = 'jp', meta = [], title, image }) => {
 
   return (
     <Helmet
+      htmlAttributes={{
+        lang,
+      }}
+      defaultTitle={defaultTitle}
+      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
           name: `description`,
@@ -60,11 +65,6 @@ const Seo = ({ description = '', lang = 'jp', meta = [], title, image }) => {
           content: defaultTitle,
         },
       ].concat(meta)}
-      htmlAttributes={{
-        lang,
-      }}
-      defaultTitle={defaultTitle}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
     />
   )
 }

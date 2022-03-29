@@ -74,7 +74,3 @@ public
 Thumbs.db
 
 .history
-.contentful.json.sample
-_config.yml
-.travis.yml
-.prettierrc

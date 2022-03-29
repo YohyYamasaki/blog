@@ -44,9 +44,9 @@ module.exports = {
   },
   pathPrefix: '/mypage/',
   plugins: [
-    `gatsby-plugin-netlify`,
+    'gatsby-plugin-netlify',
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: [
           `Zen Kaku Gothic New\:300,400,500,700`,
@@ -56,11 +56,10 @@ module.exports = {
       },
     },
 
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
+    'gatsby-plugin-sitemap',
     'gatsby-transformer-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: "yayoi's blog",
         short_name: "yayoi's blog",
@@ -72,13 +71,13 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-image',
     'gatsby-awesome-pagination',
-    `gatsby-plugin-material-ui`,
+    'gatsby-plugin-material-ui',
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
@@ -88,13 +87,13 @@ module.exports = {
               rel: 'nofollow noreferrer',
             },
           },
-          `gatsby-remark-prismjs`,
+          'gatsby-remark-prismjs',
           {
-            resolve: `gatsby-remark-images-zoom`,
+            resolve: 'gatsby-remark-images-zoom',
             options: { scrollOffset: 100 },
           },
           {
-            resolve: `gatsby-remark-images-contentful`,
+            resolve: 'gatsby-remark-images-contentful',
             options: {
               maxWidth: 1280,
               linkImagesToOriginal: false,
@@ -108,18 +107,20 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-social9-socialshare`,
+      resolve: 'gatsby-plugin-social9-socialshare',
       options: {
-        content: `5f3f681280e94275a5f596be7208a16f`,
+        content: '5f3f681280e94275a5f596be7208a16f',
       },
     },
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: 'gatsby-plugin-google-gtag',
       options: {
         trackingIds: [
           process.env.GOOGLE_ANALYTICS_ID, // Google Analytics / GA
         ],
       },
     },
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-react-css-modules',
   ],
 }
