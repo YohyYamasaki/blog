@@ -8,7 +8,7 @@ import PagenationIndex from '../../pagenation/pagenation'
 import Category from '../../organisms/category/category'
 import MainContainer from '../../uiParts/main-container/main-container'
 import SubContainer from '../../uiParts/sub-container/sub-container'
-import Body from '../../uiParts/body/body'
+import Seo from '../../seo'
 import Profile from '../../organisms/profile/profile'
 
 const Index = ({ data, pageContext }) => {
