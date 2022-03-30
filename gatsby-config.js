@@ -45,16 +45,16 @@ module.exports = {
   pathPrefix: '/mypage/',
   plugins: [
     'gatsby-plugin-netlify',
-    {
-      resolve: 'gatsby-plugin-google-fonts',
-      options: {
-        fonts: [
-          `Zen Kaku Gothic New\:300,400,500,700`,
-          `Zen Maru Gothic\:300,400,500,70`,
-        ],
-        display: 'swap',
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-google-fonts',
+    //   options: {
+    //     fonts: [
+    //       `Zen Kaku Gothic New\:300,400,500,700`,
+    //       `Zen Maru Gothic\:300,400,500,70`,
+    //     ],
+    //     display: 'swap',
+    //   },
+    // },
 
     'gatsby-plugin-sitemap',
     'gatsby-transformer-sharp',
@@ -106,12 +106,12 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: 'gatsby-plugin-social9-socialshare',
-      options: {
-        content: '5f3f681280e94275a5f596be7208a16f',
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-social9-socialshare',
+    //   options: {
+    //     content: '5f3f681280e94275a5f596be7208a16f',
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
