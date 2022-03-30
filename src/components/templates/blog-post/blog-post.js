@@ -20,7 +20,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 
   return (
     <>
-      <Seo
+      {/* <Seo
         title={post.title}
         description={
           post.body?.childMarkdownRemark?.html
@@ -28,8 +28,16 @@ const BlogPostTemplate = ({ data, pageContext }) => {
             .substr(0, 100) + '...'
         }
         image={post.heroImage?.resize.src}
-      />
-      <Layout>
+      /> */}
+      <Layout
+        title={post.title}
+        description={
+          post.body?.childMarkdownRemark?.html
+            .replace(/(<([^>]+)>)/gi, '')
+            .substr(0, 100) + '...'
+        }
+        image={post.heroImage?.resize.src}
+      >
         <div className={styles.layout}>
           <MainContainer>
             <Hero image={post.heroImage?.gatsbyImageData} title={post.title} />
