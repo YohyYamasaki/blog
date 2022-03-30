@@ -17,8 +17,8 @@ const Seo = ({ description = '', lang = 'jp', meta = [], title, image }) => {
     `
   )
 
-  const metaDescription = description
-  const defaultTitle = title
+  const metaDescription = description || site.siteMetadata.description
+  const defaultTitle = title || site.siteMetadata?.title
 
   return (
     <Helmet
