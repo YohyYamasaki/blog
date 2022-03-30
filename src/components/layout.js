@@ -8,11 +8,7 @@ import Seo from './seo'
 const BlogLayout = (props) => {
   return (
     <>
-      <Seo
-        title={props.title}
-        description={props.description}
-        image={props.image}
-      />
+      <Seo />
 
       <Navigation />
       <main>{props.children}</main>
