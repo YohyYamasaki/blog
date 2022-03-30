@@ -42,19 +42,19 @@ module.exports = {
       'ドイツ移住、海外同性婚、フロントエンド開発、ロンドン大学のことなど',
     siteUrl: `https://yayo1.com/`,
   },
-  pathPrefix: '/mypage/',
+  pathPrefix: '/',
   plugins: [
     'gatsby-plugin-netlify',
-    // {
-    //   resolve: 'gatsby-plugin-google-fonts',
-    //   options: {
-    //     fonts: [
-    //       `Zen Kaku Gothic New\:300,400,500,700`,
-    //       `Zen Maru Gothic\:300,400,500,70`,
-    //     ],
-    //     display: 'swap',
-    //   },
-    // },
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          `Zen Kaku Gothic New\:300,400,500,700`,
+          `Zen Maru Gothic\:300,400,500,70`,
+        ],
+        display: 'swap',
+      },
+    },
 
     'gatsby-plugin-sitemap',
     'gatsby-transformer-sharp',
@@ -84,7 +84,7 @@ module.exports = {
             resolve: 'gatsby-remark-external-links',
             options: {
               target: '_blank',
-              rel: 'nofollow noreferrer',
+              rel: 'noopener',
             },
           },
           'gatsby-remark-prismjs',
@@ -106,12 +106,12 @@ module.exports = {
         ],
       },
     },
-    // {
-    //   resolve: 'gatsby-plugin-social9-socialshare',
-    //   options: {
-    //     content: '5f3f681280e94275a5f596be7208a16f',
-    //   },
-    // },
+    {
+      resolve: 'gatsby-plugin-social9-socialshare',
+      options: {
+        content: '5f3f681280e94275a5f596be7208a16f',
+      },
+    },
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
