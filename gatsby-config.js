@@ -71,7 +71,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-image',
     'gatsby-awesome-pagination',
-    'gatsby-plugin-material-ui',
+    // 'gatsby-plugin-material-ui',
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,

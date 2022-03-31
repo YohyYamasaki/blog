@@ -1,6 +1,6 @@
 import React from 'react'
 import { navigate } from 'gatsby'
-import Pagination from '@mui/material/Pagination'
+// import Pagination from '@mui/material/Pagination'
 
 import * as styles from './pagenation.module.css'
 
@@ -12,11 +12,11 @@ const PagenationIndex = ({ pageContext }) => {
   }
   return (
     <div className={styles.pagenation}>
-      <Pagination
+      {/* <Pagination
         defaultPage={humanPageNumber}
         count={numberOfPages}
         onChange={handleChange}
-      />
+      /> */}
     </div>
   )
 }
