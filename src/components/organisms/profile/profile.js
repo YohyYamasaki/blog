@@ -10,7 +10,17 @@ const Profile = ({ data }) => {
       <h3 className={styles.title}>About</h3>
       <StaticImage src="../../../img/icon.jpg" className={styles.icon} />
       <Link to="https://twitter.com/__yayo1__" target="_blank">
-        <p className={styles.name}>yayoi</p>
+        <div className="link">
+          <p className={styles.name}>
+            yayoi
+            <span>
+              <StaticImage
+                src="../../../img/2021 Twitter logo - blue.png"
+                className={styles.twitter}
+              />
+            </span>
+          </p>
+        </div>
       </Link>
 
       <div className={styles.description}>
