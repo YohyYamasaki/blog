@@ -65,7 +65,9 @@ const Seo = ({ description = '', lang = 'en', meta = [], title, image }) => {
           content: defaultTitle,
         },
       ].concat(meta)}
-    />
+    >
+      <script async src="//cdn.iframe.ly/embed.js" charSet="utf-8"></script>
+    </Helmet>
   )
 }
 
