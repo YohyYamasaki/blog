@@ -69,7 +69,7 @@ a.active {
 tt,
 code,
 kbd {
-  background: var(--black-fade-5);
+  /* background: var(--black-fade-5); */
   padding-bottom: 0.2em;
   padding-top: 0.2em;
 }
@@ -83,7 +83,7 @@ kbd {
 
 tt,
 code {
-  background-color: var(--black-fade-5);
+  /* background-color: var(--black-fade-5); */
   border-radius: var(--radius-sm);
   font-weight: var(--medium);
   padding: 0.2em 0;
@@ -103,7 +103,9 @@ code {
 }
 
 .gatsby-highlight {
-  background-color: var(--code);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 14px !important;
   border-radius: 0.3em;
   margin: 0.5em 0;
   padding: 1em;
@@ -122,10 +124,12 @@ code {
 }
 
 .language-text {
-  background-color: transparent;
+  background-color: var(--bg-hover) !important;
+  color: var(--light-dark) !important;
+  text-shadow: none !important;
   margin: 0;
   padding: 0;
-  font-size: small !important;
+  font-size: 14px !important;
   word-break: break-word;
 }
 

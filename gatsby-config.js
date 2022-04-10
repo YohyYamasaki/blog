@@ -87,7 +87,24 @@ module.exports = {
               rel: 'noopener',
             },
           },
-          'gatsby-remark-prismjs',
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              // <pre>タグのclass名のプレフィックス名を設定
+              // 例 : <pre class="language-js">
+              classPrefix: "language-",
+              // セパレーターを使用して、
+              // シングルバックティックなどのインラインコードに言語を設定できる
+              inlineCodeMarker: null,
+              // 言語の別名を設定できる
+              // 例 : { sh: "bash" }
+              aliases: {},
+              // 行番号の表示・非表示
+              showLineNumbers: false,
+              // true にするとインラインコードをハイライトしない
+              noInlineHighlight: false,
+            },
+          }
           {
             resolve: 'gatsby-remark-images-zoom',
             options: { scrollOffset: 100 },

@@ -5,6 +5,8 @@ import './global.css'
 import Navigation from './uiParts/navigation/navigation'
 import Footer from './uiParts/footer/footer'
 import Seo from './seo'
+import './prism.css'
+
 const BlogLayout = (props) => {
   return (
     <>
