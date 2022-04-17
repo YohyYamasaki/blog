@@ -112,6 +112,8 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images-contentful',
             options: {
+              wrapperStyle:
+                'width: 80%; height: auto; margin: 0 auto; padding: 10px',
               maxWidth: 1280,
               linkImagesToOriginal: false,
               zIndex: 4,

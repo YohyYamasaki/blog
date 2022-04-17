@@ -133,6 +133,18 @@ code {
   word-break: break-word;
 }
 
+/* .medium-zoom-image,
+.gatsby-resp-image-background-image {
+  width: 70%;
+  height: auto !important;
+  margin: 20px;
+}
+
+.gatsby-resp-image-background-image {
+  display: none;
+} */
 .medium-zoom-image--opened {
+  padding: 0;
+  margin: 0;
   z-index: 99 !important;
 }
