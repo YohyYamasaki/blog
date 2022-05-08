@@ -38,8 +38,7 @@ module.exports = {
   siteMetadata: {
     title: "yayoi's blog",
     auther: 'yayoi',
-    description:
-      'ドイツ移住、海外同性婚、フロントエンド開発、ロンドン大学のことなど',
+    description: 'ドイツ移住、フロントエンド開発、ロンドン大学のことなど',
     siteUrl: `https://yayo1.com/`,
   },
   pathPrefix: '/',
@@ -80,6 +79,8 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          `gatsby-remark-link-beautify`,
+
           {
             resolve: 'gatsby-remark-external-links',
             options: {
