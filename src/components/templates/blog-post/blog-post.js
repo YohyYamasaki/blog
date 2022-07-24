@@ -39,7 +39,6 @@ const BlogPostTemplate = ({ data, pageContext }) => {
               <div>
                 <Tags tags={post.tags} />
               </div>
-              <div className="s9-widget-wrapper"></div>
             </div>
 
             <div

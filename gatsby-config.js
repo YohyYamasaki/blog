@@ -127,12 +127,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-social9-socialshare',
-      options: {
-        content: '5f3f681280e94275a5f596be7208a16f',
-      },
-    },
-    {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
         trackingIds: [
